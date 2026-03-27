@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "net.darkwyvbat.slimeloot.mixin.client",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "SlimeRenderStateMixin",
+    "SlimeRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

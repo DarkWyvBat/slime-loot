@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "slime-loot-datagen",
+  "version": "${version}",
+  "name": "Slime Loot Datagen",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "net.darkwyvbat.slimeloot.SlimeLootDataGenerator"
+    ]
+  }
+}

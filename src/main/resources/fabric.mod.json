@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "slime-loot",
+	"version": "${version}",
+	"name": "Slime Loot",
+	"description": "Slimes can now spawn with items inside.",
+	"authors": [
+		"DarkWyvBat"
+	],
+	"contact": {
+		"homepage": "https://github.com/DarkWyvBat/slime-loot",
+		"sources": "https://github.com/DarkWyvBat/slime-loot"
+	},
+	"license": "MIT",
+	"icon": "assets/slime-loot/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.darkwyvbat.slimeloot.SlimeLoot"
+		],
+		"client": [
+			"net.darkwyvbat.slimeloot.SlimeLootClient"
+		]
+	},
+	"mixins": [
+		"slime-loot.mixins.json",
+		{
+			"config": "slime-loot.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.5",
+		"minecraft": ">=26.1",
+		"java": ">=25",
+		"fabric-api": ">=0.144.3+26.1"
+	}
+}
